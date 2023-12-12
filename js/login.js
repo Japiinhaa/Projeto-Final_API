@@ -77,7 +77,7 @@ form.addEventListener('submit', function(event) {
 	const usuario = textInput.value;
     const password = passwordInput.value;
 
-	axios.post('https://conectadev.1gabsfps1.repl.co/login', {
+	axios.post('https://conectadev.vitorgoncalve17.repl.co/login', {
 		Usuario: usuario,
 		Senha: password
 	})
