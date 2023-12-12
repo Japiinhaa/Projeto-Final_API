@@ -1,6 +1,5 @@
-
-  // Fazendo a requisição GET
-  axios.get('https://apiconectadev.1gabsfps1.repl.co/posts')
+// Fazendo a requisição GET
+  axios.get('https://conectadev.1gabsfps1.repl.co/posts')
     .then(function (response) {
       const posts = response.data;
       const feedsElement = document.querySelector('.feeds');
@@ -49,7 +48,7 @@
   
 const token = localStorage.getItem('token');
 
-axios.get('https://apiconectadev.1gabsfps1.repl.co/user',
+axios.get('https://conectadev.1gabsfps1.repl.co/user',
 {
   headers: {
       'Authorization': `${token}` // Adiciona o token ao cabeçalho da requisição
@@ -102,7 +101,7 @@ document.querySelector('.confirm').addEventListener('click', function() {
   const token = localStorage.getItem('token');
   const postId = localStorage.getItem('postIdToDelete');
 
-  axios.delete('https://apiconectadev.1gabsfps1.repl.co/delete', {
+  axios.delete('https://conectadev.1gabsfps1.repl.co/delete', {
     data: {
       id: postId
     },
@@ -126,7 +125,7 @@ createPostButton.addEventListener('click', async function(event) {
     const token = localStorage.getItem('token');
 
     try {
-      await axios.post('https://apiconectadev.1gabsfps1.repl.co/post', 
+      await axios.post('https://conectadev.1gabsfps1.repl.co/post', 
       {
         Conteudo: postContent
       },
@@ -143,5 +142,3 @@ createPostButton.addEventListener('click', async function(event) {
     console.log('O conteúdo do post não pode ser vazio.');
   }
 });
-
-
