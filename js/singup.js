@@ -76,7 +76,7 @@ form.addEventListener('submit', function(event) {
 
 
     // Enviar os dados para a API de criação de conta
-    axios.post('https://conectadev.1gabsfps1.repl.co/singup', {
+    axios.post('https://conectadev.vitorgoncalve17.repl.co/singup', {
         Usuario: username,
         Senha: password
     }, {withCredentials: true})
